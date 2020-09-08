@@ -1,4 +1,5 @@
 {
     "app_name": "AppName",
-    "company_name": "CompanyName"
+    "company_name": "CompanyName",
+    "bundle_identifier": "BundleIdentifier"
 }

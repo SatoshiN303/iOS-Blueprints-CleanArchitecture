@@ -1,0 +1,13 @@
+//
+//  Config.Debug.xcconfig
+//  {{cookiecutter.app_name}}
+//
+//  Created by 佐藤 慎 on 2020/09/08.
+//  Copyright © 2020 {{cookiecutter.company_name}}. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+PRODUCT_BUNDLE_IDENTIFIER={{ cookiecutter.bundle_identifier | replace(' ', '') }}.debug
+OTHER_SWIFT_FLAGS = $(inherited)

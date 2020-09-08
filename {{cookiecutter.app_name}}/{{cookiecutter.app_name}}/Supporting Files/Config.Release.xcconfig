@@ -1,0 +1,12 @@
+//
+//  Config.Release.xcconfig
+//  {{cookiecutter.app_name}}
+//
+//  Copyright © 2020 {{cookiecutter.company_name}}. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+PRODUCT_BUNDLE_IDENTIFIER={{ cookiecutter.bundle_identifier | replace(' ', '') }}
+OTHER_SWIFT_FLAGS = $(inherited)
