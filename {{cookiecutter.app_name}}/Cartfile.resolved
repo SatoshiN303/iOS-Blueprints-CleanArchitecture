@@ -1,0 +1,4 @@
+github "Swinject/Swinject" "2.6.0"
+github "Swinject/SwinjectStoryboard" "2.2.0"
+github "antitypical/Result" "4.1.0"
+github "ishkawa/APIKit" "4.1.0"

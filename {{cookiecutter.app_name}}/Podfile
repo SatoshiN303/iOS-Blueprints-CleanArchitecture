@@ -5,7 +5,7 @@ use_frameworks!
 
 def base
 	pod 'SwiftLint'	
-	pod 'SwiftFormat/CLI'
+	#pod 'SwiftFormat/CLI'
 end
 
 def firebase

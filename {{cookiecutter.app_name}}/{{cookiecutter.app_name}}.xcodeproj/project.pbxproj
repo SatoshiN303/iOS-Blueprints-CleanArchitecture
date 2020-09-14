@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -47,9 +47,9 @@
 		ACBFF29B8F230525F81B8245 /* Pods-{{cookiecutter.app_name}}Tests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-{{cookiecutter.app_name}}Tests.adhoc.xcconfig"; path = "Target Support Files/Pods-{{cookiecutter.app_name}}Tests/Pods-{{cookiecutter.app_name}}Tests.adhoc.xcconfig"; sourceTree = "<group>"; };
 		C3E93B6BB56D7E6283A0B967 /* Pods-{{cookiecutter.app_name}}.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-{{cookiecutter.app_name}}.debug.xcconfig"; path = "Target Support Files/Pods-{{cookiecutter.app_name}}/Pods-{{cookiecutter.app_name}}.debug.xcconfig"; sourceTree = "<group>"; };
 		E0D1EDD07F2BE29C4BB42DEF /* Pods-{{cookiecutter.app_name}}.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-{{cookiecutter.app_name}}.adhoc.xcconfig"; path = "Target Support Files/Pods-{{cookiecutter.app_name}}/Pods-{{cookiecutter.app_name}}.adhoc.xcconfig"; sourceTree = "<group>"; };
-		E5C89E7DBFF766E141F4FCB6 /* Pods___cookiecutter_app_name__Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods___cookiecutter_app_name__Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5C89E7DBFF766E141F4FCB6 /* Pods___cookiecutter_app_name__Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods___cookiecutter_app_name__Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED14059F9C8E1C9767A01FF7 /* Pods-{{cookiecutter.app_name}}Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-{{cookiecutter.app_name}}Tests.release.xcconfig"; path = "Target Support Files/Pods-{{cookiecutter.app_name}}Tests/Pods-{{cookiecutter.app_name}}Tests.release.xcconfig"; sourceTree = "<group>"; };
-		EF6057E24E1BDB5E3DB71F86 /* Pods___cookiecutter_app_name__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods___cookiecutter_app_name__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF6057E24E1BDB5E3DB71F86 /* Pods___cookiecutter_app_name__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods___cookiecutter_app_name__.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1BF74AE1C01105B5D448D16 /* Pods-{{cookiecutter.app_name}}.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-{{cookiecutter.app_name}}.release.xcconfig"; path = "Target Support Files/Pods-{{cookiecutter.app_name}}/Pods-{{cookiecutter.app_name}}.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,7 +146,6 @@
 				ACBFF29B8F230525F81B8245 /* Pods-{{cookiecutter.app_name}}Tests.adhoc.xcconfig */,
 				ED14059F9C8E1C9767A01FF7 /* Pods-{{cookiecutter.app_name}}Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -265,6 +264,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwinjectStoryboard.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
@@ -309,7 +309,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" . --exclude Carthage,Pods,vendor,SPN-app-iosTests,SPN-app-iosUITests --trimwhitespace nonblank-lines --stripunusedargs closure-only --disable strongOutlets,trailingCommas,redundantSelf\n";
+			shellScript = "# Default OFF\n\n#\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" . --exclude Carthage,Pods, {{cookiecutter.app_name}}Tests --trimwhitespace nonblank-lines --stripunusedargs closure-only --disable strongOutlets,trailingCommas,redundantSelf\n";
 		};
 		22B79DDB250F529200A81950 /* Crashlytics */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -327,7 +327,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+			shellScript = "# Get the GoogleService-Info.plist from the Firebase console and add it to your project\n\n#\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
 		};
 		3B8236A77C16AFD0D2FB5C03 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

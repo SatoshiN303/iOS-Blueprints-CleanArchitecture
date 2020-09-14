@@ -1,0 +1,73 @@
+###===Rules
+#
+# https://github.com/realm/SwiftLint/blob/master/Rules.md
+#
+
+excluded:
+  - Carthage
+  - Pods
+  - fastlane
+#  - {{cookiecutter.app_name}}Tests
+#  - {{cookiecutter.app_name}}UITests
+  - vendor
+  
+disabled_rules:
+  - identifier_name
+  - line_length
+  - trailing_whitespace
+  - force_try
+  - explicit_type_interface
+  - fatal_error_message
+  - switch_case_on_newline
+  - todo
+#  - cyclomatic_complexity
+
+force_cast: error              # [NG] as!
+force_unwrapping: error        # [NG] value!
+opening_brace: error           # [NG] if x == 0{ / [OK] if x == 0 {
+statement_position: error      # [NG] if x == 0 \n { / [OK] if x == 0 {
+return_arrow_whitespace: error # [NG] func foo()->Int / [OK] func foo() -> Int
+colon:                         # [NG] let x:Int = 0 / [OK] let x: Int = 0
+  severity: error
+comma:                         # [NG] foo(x,y , z) / [OK] foo(x, y, z)
+  severity: error
+control_statement:             # [NG] if (x == 0) / [OK] if x == 0
+  severity: error 
+cyclomatic_complexity:         # Add to disabled_rules, depending on the case.
+  severity: error
+
+
+variable_name:
+  max_length:
+    warning: 30
+    error: 40
+  min_length:
+    warning: 3
+    error: 0
+  excluded:
+    - id
+    - x
+    - y
+    - z
+
+line_length: 300
+
+opt_in_rules:
+- force_cast                     # [NG] as!
+- force_unwrapping               # [NG] value!
+#- attributes
+- closure_end_indentation
+- closure_spacing
+- empty_count
+- explicit_init
+- explicit_type_interface        
+- fatal_error_message            
+#- implicitly_unwrapped_optional 
+- object_literal
+- operator_usage_whitespace
+- overridden_super_call
+#- private_outlet　　　　　　　　　
+- prohibited_super_call
+- redundant_nil_coalescing
+#- sorted_imports               
+- switch_case_on_newline
