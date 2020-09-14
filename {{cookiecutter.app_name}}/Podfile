@@ -3,7 +3,7 @@ source 'https://github.com/CocoaPods/Specs'
 platform :ios, '11.0'
 use_frameworks!
 
-def base_pods
+def base
 	pod 'SwiftLint'	
 	pod 'SwiftFormat/CLI'
 end
@@ -14,8 +14,8 @@ def firebase
 end
 
 target '{{cookiecutter.app_name}}' do
-    base_pods
-    firebase_pods
+    base
+    firebase
     
     target '{{cookiecutter.app_name}}Tests' do
     	#=NOTE: https://guides.cocoapods.org/syntax/podfile.html#inherit_bang

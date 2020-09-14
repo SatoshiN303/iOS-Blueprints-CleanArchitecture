@@ -8,5 +8,8 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
+#include "Target Support Files/Pods-{{cookiecutter.app_name}}/Pods-{{cookiecutter.app_name}}.release.xcconfig"
+#include "Target Support Files/Pods-{{cookiecutter.app_name}}Tests/Pods-{{cookiecutter.app_name}}Tests.release.xcconfig"
+
 PRODUCT_BUNDLE_IDENTIFIER={{ cookiecutter.bundle_identifier | replace(' ', '') }}
 OTHER_SWIFT_FLAGS = $(inherited)
