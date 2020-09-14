@@ -1,0 +1,25 @@
+#===Network
+github "ishkawa/APIKit" == 4.1.0
+
+#===DI
+github "Swinject/Swinject" == 2.6.0
+github "Swinject/SwinjectStoryboard" == 2.2.0
+
+#===UI
+#github "ninjaprox/NVActivityIndicatorView" == 4.6.1
+
+#===ImageLoader
+#github "kean/Nuke" == 7.5.2
+
+#===DB
+#github "realm/realm-cocoa" == 5.4.0
+
+#===utility
+#github "Ekhoo/Device" == 3.1.2
+#github "malcommac/SwiftDate" == 4.5.1
+#github "kishikawakatsumi/KeychainAccess" == 3.1.2
+
+#===Test
+#github "Quick/Quick" ~> 1.2.0
+#github "Quick/Nimble" ~> 7.0.3
+#github "AliSoftware/OHHTTPStubs"
