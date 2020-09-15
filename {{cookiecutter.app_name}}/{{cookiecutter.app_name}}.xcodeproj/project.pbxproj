@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		17F0E37E3C6DF8443F5EA10B /* Pods___cookiecutter_app_name__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6057E24E1BDB5E3DB71F86 /* Pods___cookiecutter_app_name__.framework */; };
 		199C8CB33C644908B1B04C4E /* Pods___cookiecutter_app_name__Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5C89E7DBFF766E141F4FCB6 /* Pods___cookiecutter_app_name__Tests.framework */; };
+		22027BF1250F68EC00F43EAB /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22027BED250F68EC00F43EAB /* APIKit.framework */; };
+		22027BF2250F68EC00F43EAB /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22027BEE250F68EC00F43EAB /* Result.framework */; };
+		22027BF3250F68EC00F43EAB /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22027BEF250F68EC00F43EAB /* Swinject.framework */; };
+		22027BF4250F68EC00F43EAB /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22027BF0250F68EC00F43EAB /* SwinjectStoryboard.framework */; };
 		22101F7B250770BA0046FAF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22101F7A250770BA0046FAF9 /* AppDelegate.swift */; };
 		22101F7D250770BA0046FAF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22101F7C250770BA0046FAF9 /* SceneDelegate.swift */; };
 		22101F7F250770BA0046FAF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22101F7E250770BA0046FAF9 /* ViewController.swift */; };
@@ -16,6 +20,7 @@
 		22101F84250770BB0046FAF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22101F83250770BB0046FAF9 /* Assets.xcassets */; };
 		22101F87250770BB0046FAF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22101F85250770BB0046FAF9 /* LaunchScreen.storyboard */; };
 		22101F92250770BB0046FAF9 /* {{cookiecutter.app_name}}Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22101F91250770BB0046FAF9 /* {{cookiecutter.app_name}}Tests.swift */; };
+		22B79DE0250F646400A81950 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B79DDF250F646400A81950 /* AppAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22027BED250F68EC00F43EAB /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		22027BEE250F68EC00F43EAB /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		22027BEF250F68EC00F43EAB /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
+		22027BF0250F68EC00F43EAB /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwinjectStoryboard.framework; path = Carthage/Build/iOS/SwinjectStoryboard.framework; sourceTree = "<group>"; };
 		22101F77250770BA0046FAF9 /* {{cookiecutter.app_name}}.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "{{cookiecutter.app_name}}.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22101F7A250770BA0046FAF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22101F7C250770BA0046FAF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +52,7 @@
 		22240BAE2507897300BCF476 /* Config.Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.Debug.xcconfig; sourceTree = "<group>"; };
 		22240BAF2507898100BCF476 /* Config.Adhoc.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.Adhoc.xcconfig; sourceTree = "<group>"; };
 		22240BB02507898F00BCF476 /* Config.Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.Release.xcconfig; sourceTree = "<group>"; };
+		22B79DDF250F646400A81950 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 		8B43113EBD5C626CC8ED4A3A /* Pods-{{cookiecutter.app_name}}Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-{{cookiecutter.app_name}}Tests.debug.xcconfig"; path = "Target Support Files/Pods-{{cookiecutter.app_name}}Tests/Pods-{{cookiecutter.app_name}}Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		ACBFF29B8F230525F81B8245 /* Pods-{{cookiecutter.app_name}}Tests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-{{cookiecutter.app_name}}Tests.adhoc.xcconfig"; path = "Target Support Files/Pods-{{cookiecutter.app_name}}Tests/Pods-{{cookiecutter.app_name}}Tests.adhoc.xcconfig"; sourceTree = "<group>"; };
 		C3E93B6BB56D7E6283A0B967 /* Pods-{{cookiecutter.app_name}}.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-{{cookiecutter.app_name}}.debug.xcconfig"; path = "Target Support Files/Pods-{{cookiecutter.app_name}}/Pods-{{cookiecutter.app_name}}.debug.xcconfig"; sourceTree = "<group>"; };
@@ -58,6 +68,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22027BF1250F68EC00F43EAB /* APIKit.framework in Frameworks */,
+				22027BF2250F68EC00F43EAB /* Result.framework in Frameworks */,
+				22027BF3250F68EC00F43EAB /* Swinject.framework in Frameworks */,
+				22027BF4250F68EC00F43EAB /* SwinjectStoryboard.framework in Frameworks */,
 				17F0E37E3C6DF8443F5EA10B /* Pods___cookiecutter_app_name__.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,10 +110,12 @@
 		22101F79250770BA0046FAF9 /* {{cookiecutter.app_name}} */ = {
 			isa = PBXGroup;
 			children = (
-				22101F7A250770BA0046FAF9 /* AppDelegate.swift */,
+				22B79DDE250F643700A81950 /* AppMain */,
+				22B79DDD250F642900A81950 /* DI */,
+				22B79DE1250F648400A81950 /* Helpers */,
+				22B79DE2250F649100A81950 /* Network */,
+				22B79DE3250F64A500A81950 /* Scenes */,
 				22101F7C250770BA0046FAF9 /* SceneDelegate.swift */,
-				22101F7E250770BA0046FAF9 /* ViewController.swift */,
-				22101F80250770BA0046FAF9 /* Main.storyboard */,
 				22101F83250770BB0046FAF9 /* Assets.xcassets */,
 				22101F85250770BB0046FAF9 /* LaunchScreen.storyboard */,
 				22101F88250770BB0046FAF9 /* Info.plist */,
@@ -127,9 +143,84 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		22B79DDD250F642900A81950 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				22B79DDF250F646400A81950 /* AppAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		22B79DDE250F643700A81950 /* AppMain */ = {
+			isa = PBXGroup;
+			children = (
+				22101F7A250770BA0046FAF9 /* AppDelegate.swift */,
+			);
+			path = AppMain;
+			sourceTree = "<group>";
+		};
+		22B79DE1250F648400A81950 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		22B79DE2250F649100A81950 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		22B79DE3250F64A500A81950 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				22B79DE4250F64BB00A81950 /* Top */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		22B79DE4250F64BB00A81950 /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				22B79DE5250F64CC00A81950 /* Configurator */,
+				22B79DE6250F64DC00A81950 /* Domain */,
+				22B79DE7250F64E800A81950 /* Presentation */,
+			);
+			path = Top;
+			sourceTree = "<group>";
+		};
+		22B79DE5250F64CC00A81950 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		22B79DE6250F64DC00A81950 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		22B79DE7250F64E800A81950 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				22101F7E250770BA0046FAF9 /* ViewController.swift */,
+				22101F80250770BA0046FAF9 /* Main.storyboard */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		2B3A537FE2E367000124EBD8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22027BED250F68EC00F43EAB /* APIKit.framework */,
+				22027BEE250F68EC00F43EAB /* Result.framework */,
+				22027BEF250F68EC00F43EAB /* Swinject.framework */,
+				22027BF0250F68EC00F43EAB /* SwinjectStoryboard.framework */,
 				EF6057E24E1BDB5E3DB71F86 /* Pods___cookiecutter_app_name__.framework */,
 				E5C89E7DBFF766E141F4FCB6 /* Pods___cookiecutter_app_name__Tests.framework */,
 			);
@@ -398,6 +489,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22101F7F250770BA0046FAF9 /* ViewController.swift in Sources */,
+				22B79DE0250F646400A81950 /* AppAssembly.swift in Sources */,
 				22101F7B250770BA0046FAF9 /* AppDelegate.swift in Sources */,
 				22101F7D250770BA0046FAF9 /* SceneDelegate.swift in Sources */,
 			);
@@ -561,6 +653,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "{{cookiecutter.app_name}}/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -579,6 +675,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "{{cookiecutter.app_name}}/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -701,6 +801,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "{{cookiecutter.app_name}}/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
