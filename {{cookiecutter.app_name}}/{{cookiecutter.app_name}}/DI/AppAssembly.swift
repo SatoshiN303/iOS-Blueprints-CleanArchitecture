@@ -11,7 +11,9 @@ import SwinjectStoryboard
 
 class AppAssembly {
     class var assembler: Assembler? {
-        return Assembler([])
+        return Assembler([
+            SampleAssembly()
+        ])
     }
 }
 

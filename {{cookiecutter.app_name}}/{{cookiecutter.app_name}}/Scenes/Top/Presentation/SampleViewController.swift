@@ -6,12 +6,25 @@
 //
 
 import UIKit
+import Swinject
+import SwinjectStoryboard
 
 class SampleViewController: UIViewController {
+    
+    var presenter: SamplePresenterInputProtocol!
+    
+    static func makeInstance() -> SampleViewController {
+        guard let vc = SwinjectStoryboard.create(name: "Main", bundle: nil).instantiateInitialViewController() as? SampleViewController else {
+            fatalError()
+        }
+        return vc
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         print("!!!!!!!!!!!!!!!!!!!!!!")
     }
+}
+
+extension SampleViewController: SamplePresenterOutputProtocol {
 }
