@@ -14,7 +14,7 @@ class SampleViewController: UIViewController {
     var presenter: SamplePresenterInputProtocol!
     
     static func makeInstance() -> SampleViewController {
-        guard let vc = SwinjectStoryboard.create(name: "Main", bundle: nil).instantiateInitialViewController() as? SampleViewController else {
+        guard let vc = SwinjectStoryboard.create(name: "Sample", bundle: nil).instantiateInitialViewController() as? SampleViewController else {
             fatalError()
         }
         return vc
