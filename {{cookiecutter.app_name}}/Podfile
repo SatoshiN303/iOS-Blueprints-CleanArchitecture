@@ -20,8 +20,5 @@ target '{{cookiecutter.app_name}}' do
     target '{{cookiecutter.app_name}}Tests' do
     	#=NOTE: https://guides.cocoapods.org/syntax/podfile.html#inherit_bang
     	inherit! :search_paths 
-    	# pod 'OHHTTPStubs/Swift'
-    	# pod 'Quick'
-		# pod 'Nimble'
 	end
 end
