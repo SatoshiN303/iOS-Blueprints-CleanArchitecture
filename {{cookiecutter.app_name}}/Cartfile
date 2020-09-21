@@ -1,5 +1,5 @@
 #===Network
-github "ishkawa/APIKit" == 4.1.0
+github "ishkawa/APIKit" == 5.1.0
 
 #===DI
 github "Swinject/Swinject" == 2.6.0
