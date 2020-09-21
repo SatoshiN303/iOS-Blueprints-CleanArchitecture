@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Called by versions under iOS13
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController =  SampleViewController.makeInstance()
+        window?.rootViewController = SampleViewController.makeInstance()
         window?.makeKeyAndVisible()
         return true
     }
