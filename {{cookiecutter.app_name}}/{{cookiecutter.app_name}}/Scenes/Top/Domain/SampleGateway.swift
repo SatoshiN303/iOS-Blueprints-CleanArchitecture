@@ -11,4 +11,3 @@ import Swinject
 class SampleGateway: SampleGatewayProtocol {
     
 }
-

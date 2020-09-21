@@ -21,4 +21,3 @@ protocol SamplePresenterInputProtocol {
 
 protocol SamplePresenterOutputProtocol: class {
 }
-

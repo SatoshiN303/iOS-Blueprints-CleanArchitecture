@@ -7,15 +7,14 @@ A minimal template to jumpstart your next iOS project in Clean Architecture.
 
 Inspired by [Rightpoint/ios-template](https://github.com/Rightpoint/ios-template)
 
-### QuickStart
+## QuickStart
 
-```
-$ command
-$ command
-```
+1. Install cookiecutter `brew install cookiecutter` on macOS.
+2. Run cookiecutter `cookiecutter https://github.com/SatoshiN303/iOS-Blueprints-CleanArchitecture.git`
+3. Answer the questions.
+4. That's it :) 🍻
 
-## Prerequesites
-
-## Usage
 
 ## Contains 
+
+TBD
