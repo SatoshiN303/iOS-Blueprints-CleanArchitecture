@@ -14,7 +14,12 @@ Inspired by [Rightpoint/ios-template](https://github.com/Rightpoint/ios-template
 3. Answer the questions.
 4. That's it :) 🍻
 
-
 ## Contains 
 
-TBD
+- [x] bootstrap.sh
+- [x] .xcconfig (debug/adhoc/release)
+- [x] CocoaPods Settings 
+- [x] Carthage Setting 
+- [x] no Main.storyboard
+- [x] DependencyInjection SampleCode
+- [ ] NetworkLayer SampleCode
