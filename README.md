@@ -10,7 +10,7 @@ Inspired by [Rightpoint/ios-template](https://github.com/Rightpoint/ios-template
 ## QuickStart
 
 1. Install [Cookiecutter](https://github.com/cookiecutter/cookiecutter) `brew install cookiecutter` on macOS.
-2. Run cookiecutter `cookiecutter https://github.com/SatoshiN303/iOS-Blueprints-CleanArchitecture.git`
+2. Run cookiecutter `$ cookiecutter https://github.com/SatoshiN303/iOS-Blueprints-CleanArchitecture.git`
 3. Answer the questions.
 4. That's it :) 🍻
 
