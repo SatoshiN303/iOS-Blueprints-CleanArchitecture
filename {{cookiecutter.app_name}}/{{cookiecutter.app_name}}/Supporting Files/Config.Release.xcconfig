@@ -12,4 +12,5 @@
 #include "Pods/Target Support Files/Pods-{{cookiecutter.app_name}}Tests/Pods-{{cookiecutter.app_name}}Tests.release.xcconfig"
 
 PRODUCT_BUNDLE_IDENTIFIER={{ cookiecutter.bundle_identifier | replace(' ', '') }}
-OTHER_SWIFT_FLAGS = $(inherited)
+
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "RELEASE"

@@ -14,4 +14,5 @@
 
 
 PRODUCT_BUNDLE_IDENTIFIER={{ cookiecutter.bundle_identifier | replace(' ', '') }}.adhoc
-OTHER_SWIFT_FLAGS = $(inherited)
+
+OTHER_SWIFT_FLAGS = $(inherited) "-Onone" "-D" "ADHOC" "-D" "COCOAPODS" "-Xfrontend" "-warn-long-function-bodies=150"
