@@ -27,31 +27,56 @@ class SampleViewController: UIViewController {
         super.viewDidLoad()
         tableView.register(SampleCell.nib, forCellReuseIdentifier: SampleCell.reuseID)
     }
+    
+    private func modeChange(isEditing: Bool) {
+        if isEditing {
+            self.view.backgroundColor = .black
+            self.tableView.isUserInteractionEnabled = false
+            self.tableView.alpha = 0.5
+            self.searchBar.setShowsCancelButton(true, animated: true)
+        } else {
+            self.searchBar.resignFirstResponder()
+            self.view.backgroundColor = .white
+            self.tableView.isUserInteractionEnabled = true
+            self.tableView.alpha = 1
+            self.searchBar.setShowsCancelButton(false, animated: true)
+
+        }
+    }
 }
 
 extension SampleViewController: SamplePresenterOutputProtocol {
+    func reloadData() {
+        tableView.reloadData()
+        modeChange(isEditing: false)
+    }
+    
+    func showErrorMessage(errMessage: [String]?) {
+        // TODO:
+    }
+    
+    func showIndicator() {
+        // TODO:
+    }
+    
+    func hideIndicator() {
+        // TODO:
+    }
 }
 
 extension SampleViewController: UISearchBarDelegate {
     func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
-        self.view.backgroundColor = .black
-        self.tableView.isUserInteractionEnabled = false
-        self.tableView.alpha = 0.5
-        self.searchBar.setShowsCancelButton(true, animated: true)
+        modeChange(isEditing: true)
         return true
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        self.searchBar.resignFirstResponder()
-        self.view.backgroundColor = .white
-        self.tableView.isUserInteractionEnabled = true
-        self.tableView.alpha = 1
-        self.searchBar.setShowsCancelButton(false, animated: true)
+        modeChange(isEditing: false)
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         if let text = searchBar.text, !text.isEmpty {
-            print(text)
+            presenter.searchRepository(text, page: nil)
         }
     }
 }
@@ -70,5 +95,9 @@ extension SampleViewController: UITableViewDataSource, UITableViewDelegate {
             return
         }
         print(repo)
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        presenter.pagination(scrollView)
     }
 }

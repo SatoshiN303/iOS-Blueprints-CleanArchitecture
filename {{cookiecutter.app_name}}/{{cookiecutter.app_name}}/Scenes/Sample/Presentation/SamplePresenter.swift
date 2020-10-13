@@ -17,10 +17,16 @@ class SamplePresenter {
 }
 
 extension SamplePresenter: SamplePresenterInputProtocol {
+        
     var rowCount: Int {
         return repositories.count
     }
     
+    func searchRepository(_ keyword: String, page: Int?) {
+        view.showIndicator()
+        useCase.fetch(keyword, page: page)
+    }
+
     func sampleCell(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: SampleCell.reuseID, for: indexPath)
 
@@ -39,7 +45,20 @@ extension SamplePresenter: SamplePresenterInputProtocol {
         }
         return repositories[indexPath.row]
     }
+    
+    func pagination(_ scrollView: UIScrollView) {
+        // TODO:
+    }
 }
 
 extension SamplePresenter: SampleUseCaseOutputProtocol {
+    func fetchSucceeded(_ repositories: [Repository]) {
+        self.repositories = repositories
+        view.reloadData()
+        view.hideIndicator()
+    }
+    
+    func fetchFailed(_ error: SessionError) {
+        // TODO:
+    }
 }

@@ -27,6 +27,8 @@
 		225F95C12535859400253EA0 /* SampleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 225F95BF2535859400253EA0 /* SampleCell.xib */; };
 		225F95C22535859400253EA0 /* SampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225F95C02535859400253EA0 /* SampleCell.swift */; };
 		225F95C42535869600253EA0 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225F95C32535869500253EA0 /* Reusable.swift */; };
+		225F95C625359F3700253EA0 /* AppResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225F95C525359F3700253EA0 /* AppResult.swift */; };
+		225F95CB2535A0CD00253EA0 /* Fetchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225F95CA2535A0CD00253EA0 /* Fetchable.swift */; };
 		22A8E4882533F18D00C6E81C /* DecodableDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A8E4872533F18D00C6E81C /* DecodableDataParser.swift */; };
 		22A8E48A2533F4FF00C6E81C /* SessionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A8E4892533F4FF00C6E81C /* SessionError.swift */; };
 		22A8E48E253401C200C6E81C /* RequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A8E48D253401C200C6E81C /* RequestExtension.swift */; };
@@ -78,6 +80,8 @@
 		225F95BF2535859400253EA0 /* SampleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleCell.xib; sourceTree = "<group>"; };
 		225F95C02535859400253EA0 /* SampleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleCell.swift; sourceTree = "<group>"; };
 		225F95C32535869500253EA0 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		225F95C525359F3700253EA0 /* AppResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppResult.swift; sourceTree = "<group>"; };
+		225F95CA2535A0CD00253EA0 /* Fetchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetchable.swift; sourceTree = "<group>"; };
 		22A8E4872533F18D00C6E81C /* DecodableDataParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodableDataParser.swift; sourceTree = "<group>"; };
 		22A8E4892533F4FF00C6E81C /* SessionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionError.swift; sourceTree = "<group>"; };
 		22A8E48D253401C200C6E81C /* RequestExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestExtension.swift; sourceTree = "<group>"; };
@@ -205,6 +209,32 @@
 			path = Response;
 			sourceTree = "<group>";
 		};
+		225F95C72535A05A00253EA0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				225F95C525359F3700253EA0 /* AppResult.swift */,
+				225F95CA2535A0CD00253EA0 /* Fetchable.swift */,
+				2235C9E72534468900101010 /* KeyedDecodingContainerExtension.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		225F95C82535A06600253EA0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				225F95C32535869500253EA0 /* Reusable.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		225F95C92535A08100253EA0 /* Codable */ = {
+			isa = PBXGroup;
+			children = (
+				2235C9F125345B9E00101010 /* CodableExtension.swift */,
+			);
+			path = Codable;
+			sourceTree = "<group>";
+		};
 		22A8E4822533EF2F00C6E81C /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,9 +265,9 @@
 		22B79DE1250F648400A81950 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				2235C9E72534468900101010 /* KeyedDecodingContainerExtension.swift */,
-				2235C9F125345B9E00101010 /* CodableExtension.swift */,
-				225F95C32535869500253EA0 /* Reusable.swift */,
+				225F95C82535A06600253EA0 /* Cell */,
+				225F95C92535A08100253EA0 /* Codable */,
+				225F95C72535A05A00253EA0 /* Network */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -594,6 +624,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				225F95CB2535A0CD00253EA0 /* Fetchable.swift in Sources */,
 				225F95C42535869600253EA0 /* Reusable.swift in Sources */,
 				22BF9EFB251766C10033BFA9 /* SamplePresenter.swift in Sources */,
 				22101F7F250770BA0046FAF9 /* SampleViewController.swift in Sources */,
@@ -601,6 +632,7 @@
 				22A8E4882533F18D00C6E81C /* DecodableDataParser.swift in Sources */,
 				22A8E48A2533F4FF00C6E81C /* SessionError.swift in Sources */,
 				22BF9EF6251766A10033BFA9 /* SampleGateway.swift in Sources */,
+				225F95C625359F3700253EA0 /* AppResult.swift in Sources */,
 				22A8E48E253401C200C6E81C /* RequestExtension.swift in Sources */,
 				22A8E4922534034100C6E81C /* User.swift in Sources */,
 				22BF9EF9251766AA0033BFA9 /* SampleProtocols.swift in Sources */,
