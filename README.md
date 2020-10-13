@@ -22,4 +22,4 @@ Inspired by [Rightpoint/ios-template](https://github.com/Rightpoint/ios-template
 - [x] Carthage Setting 
 - [x] no Main.storyboard
 - [x] DependencyInjection SampleCode
-- [ ] NetworkLayer SampleCode
+- [x] Github's Repositry search process SampleCode
