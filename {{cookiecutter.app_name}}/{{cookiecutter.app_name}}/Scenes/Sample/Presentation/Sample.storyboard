@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uva-WH-2Be">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sample View Controller-->
+        <scene sceneID="S9B-8J-0yH">
+            <objects>
+                <viewController id="uva-WH-2Be" customClass="SampleViewController" customModule="__cookiecutter_app_name__" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hwk-WJ-GnK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ack-Dr-WZg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="uva-WH-2Be" id="JFb-CW-HmR"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="V6G-Ca-EN6">
+                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="V6G-Ca-EN6" firstAttribute="trailing" secondItem="7fH-wa-ZT9" secondAttribute="trailing" id="48N-jO-OfO"/>
+                            <constraint firstItem="V6G-Ca-EN6" firstAttribute="leading" secondItem="7fH-wa-ZT9" secondAttribute="leading" id="AqL-UN-dQ8"/>
+                            <constraint firstItem="ack-Dr-WZg" firstAttribute="leading" secondItem="7fH-wa-ZT9" secondAttribute="leading" id="YEc-B1-pnK"/>
+                            <constraint firstItem="ack-Dr-WZg" firstAttribute="trailing" secondItem="7fH-wa-ZT9" secondAttribute="trailing" id="d1A-NN-SX9"/>
+                            <constraint firstItem="V6G-Ca-EN6" firstAttribute="top" secondItem="ack-Dr-WZg" secondAttribute="bottom" id="fvS-xt-xip"/>
+                            <constraint firstItem="V6G-Ca-EN6" firstAttribute="bottom" secondItem="7fH-wa-ZT9" secondAttribute="bottom" id="olS-jh-D8l"/>
+                            <constraint firstItem="ack-Dr-WZg" firstAttribute="top" secondItem="7fH-wa-ZT9" secondAttribute="top" id="oni-QM-w1t"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7fH-wa-ZT9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="i48-kz-ZwY"/>
+                    <connections>
+                        <outlet property="searchBar" destination="ack-Dr-WZg" id="WXF-zo-xV9"/>
+                        <outlet property="tableView" destination="V6G-Ca-EN6" id="ZPH-5u-obY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8mr-pA-nVJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-143.47826086956522" y="11.383928571428571"/>
+        </scene>
+    </scenes>
+</document>

@@ -17,6 +17,9 @@ protocol SampleUseCaseOutputProtocol: class {
 }
 
 protocol SamplePresenterInputProtocol {
+    var rowCount: Int { get }
+    func sampleCell(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    func didSelect(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> Repository?
 }
 
 protocol SamplePresenterOutputProtocol: class {
