@@ -7,7 +7,7 @@
 
 import Foundation
 import Swinject
+import APIKit
 
 class SampleGateway: SampleGatewayProtocol {
-    
 }
