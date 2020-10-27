@@ -1,0 +1,27 @@
+name: Swift
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Xcode Select
+      run: sudo xcode-select -s '/Applications/Xcode_11.3.1.app/Contents/Developer'
+    - name: Show Xcode version
+      run: xcodebuild -version
+    - name: Install and Build
+      run: |
+        brew install cookiecutter
+        cookiecutter https://github.com/SatoshiN303/iOS-Blueprints-CleanArchitecture.git --no-input --config-file /Users/runner/work/iOS-Blueprints-CleanArchitecture/iOS-Blueprints-CleanArchitecture/default_config_for_actions.yml
+        cd ./SampleApp
+        ./bootstrap.sh
+        xcodebuild build -workspace "{{cookiecutter.app_name}}.xcworkspace" -scheme "{{cookiecutter.app_name}}_Debug" -sdk iphonesimulator
+        
