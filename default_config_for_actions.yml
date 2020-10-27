@@ -1,0 +1,4 @@
+default_context:
+    app_name: "SampleApp"
+    company_name: "CompanyName.Inc"
+    bundle_identifier: "com.hoge.huga"
