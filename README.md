@@ -23,3 +23,4 @@ Inspired by [Rightpoint/ios-template](https://github.com/Rightpoint/ios-template
 - [x] no Main.storyboard
 - [x] DependencyInjection SampleCode
 - [x] Github's Repositry search process SampleCode
+- [x] Sample XCTests
