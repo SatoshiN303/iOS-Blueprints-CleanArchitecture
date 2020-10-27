@@ -23,7 +23,8 @@ pod install
 
 # install dependencies via Carthage
 echo "Install dependencies via Carthage"
-carthage bootstrap --platform ios --no-use-binaries --cache-builds
+#carthage bootstrap --platform ios --no-use-binaries --cache-builds
+carthage bootstrap --platform ios --no-use-binaries
 
 echo "Enjoy Coding!🥂"
 
