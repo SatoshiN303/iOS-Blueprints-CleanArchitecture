@@ -26,5 +26,5 @@ jobs:
         cd ./SampleApp
         ./bootstrap.sh
     - name: Build
-      run: xcodebuild build -workspace "SampleApp.xcworkspace" -scheme "{{cookiecutter.app_name}}_Debug" -sdk iphonesimulator
+      run: xcodebuild build -workspace "SampleApp.xcworkspace" -scheme "SampleApp_Debug" -sdk iphonesimulator
         
