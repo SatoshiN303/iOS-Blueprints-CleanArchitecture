@@ -15,8 +15,15 @@ jobs:
     - uses: actions/checkout@v2
     - name: Xcode Select
       run: sudo xcode-select -s '/Applications/Xcode_11.3.1.app/Contents/Developer'
-    - name: Show Xcode version
-      run: xcodebuild -version
+    - name: Show version
+      run: |
+        xcodebuild -version
+        pod --version
+        carthage version
+    - name: Carhtage Cache Clear
+      run: |
+        rm -rf ~/Library/Cache/carthage
+        rm -rf ~/Library/Cache/org.carthage.CarthageKit
     - name: Install
       run: |
         brew install cookiecutter
