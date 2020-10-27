@@ -23,5 +23,5 @@ jobs:
         cookiecutter https://github.com/SatoshiN303/iOS-Blueprints-CleanArchitecture.git --no-input --config-file /Users/runner/work/iOS-Blueprints-CleanArchitecture/iOS-Blueprints-CleanArchitecture/default_config_for_actions.yml
         cd ./SampleApp
         ./bootstrap.sh
-        xcodebuild build -workspace "{{cookiecutter.app_name}}.xcworkspace" -scheme "{{cookiecutter.app_name}}_Debug" -sdk iphonesimulator
+        xcodebuild build -workspace "SampleApp.xcworkspace" -scheme "SampleApp_Debug" -sdk iphonesimulator
         
