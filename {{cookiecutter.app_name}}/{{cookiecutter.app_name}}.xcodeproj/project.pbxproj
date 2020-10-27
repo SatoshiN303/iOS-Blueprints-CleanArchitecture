@@ -10,9 +10,9 @@
 		17F0E37E3C6DF8443F5EA10B /* Pods___cookiecutter_app_name__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6057E24E1BDB5E3DB71F86 /* Pods___cookiecutter_app_name__.framework */; };
 		199C8CB33C644908B1B04C4E /* Pods___cookiecutter_app_name__Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5C89E7DBFF766E141F4FCB6 /* Pods___cookiecutter_app_name__Tests.framework */; };
 		22027BF1250F68EC00F43EAB /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22027BED250F68EC00F43EAB /* APIKit.framework */; };
-		22027BF2250F68EC00F43EAB /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22027BEE250F68EC00F43EAB /* Result.framework */; };
 		22027BF3250F68EC00F43EAB /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22027BEF250F68EC00F43EAB /* Swinject.framework */; };
 		22027BF4250F68EC00F43EAB /* SwinjectStoryboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22027BF0250F68EC00F43EAB /* SwinjectStoryboard.framework */; };
+		220A2033254804E400999ADC /* search_repositories_success.json in Resources */ = {isa = PBXBuildFile; fileRef = 220A2032254804E400999ADC /* search_repositories_success.json */; };
 		22101F7B250770BA0046FAF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22101F7A250770BA0046FAF9 /* AppDelegate.swift */; };
 		22101F7D250770BA0046FAF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22101F7C250770BA0046FAF9 /* SceneDelegate.swift */; };
 		22101F7F250770BA0046FAF9 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22101F7E250770BA0046FAF9 /* SampleViewController.swift */; };
@@ -20,7 +20,6 @@
 		22101F87250770BB0046FAF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22101F85250770BB0046FAF9 /* LaunchScreen.storyboard */; };
 		22101F92250770BB0046FAF9 /* SampleRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22101F91250770BB0046FAF9 /* SampleRequestTests.swift */; };
 		22324BDA2547F526009FBD07 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22027BED250F68EC00F43EAB /* APIKit.framework */; };
-		22324BDB2547F539009FBD07 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22027BEE250F68EC00F43EAB /* Result.framework */; };
 		2235C9E82534468900101010 /* KeyedDecodingContainerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235C9E72534468900101010 /* KeyedDecodingContainerExtension.swift */; };
 		2235C9EC2534535000101010 /* SearchRepositoriesParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235C9EB2534535000101010 /* SearchRepositoriesParameters.swift */; };
 		2235C9F02534579100101010 /* SearchRepositryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235C9EF2534579100101010 /* SearchRepositryRequest.swift */; };
@@ -45,7 +44,6 @@
 		22BF9EFB251766C10033BFA9 /* SamplePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BF9EFA251766C10033BFA9 /* SamplePresenter.swift */; };
 		22BF9F002518D0490033BFA9 /* Sample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22BF9EFF2518D0480033BFA9 /* Sample.storyboard */; };
 		22DE192C2547FB9B00E9A6C8 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DE192B2547FB9B00E9A6C8 /* OHHTTPStubs.framework */; };
-		22DE192E2547FDF500E9A6C8 /* search_repositories_success.json in Resources */ = {isa = PBXBuildFile; fileRef = 22DE192D2547FDF400E9A6C8 /* search_repositories_success.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +61,7 @@
 		22027BEE250F68EC00F43EAB /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		22027BEF250F68EC00F43EAB /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		22027BF0250F68EC00F43EAB /* SwinjectStoryboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwinjectStoryboard.framework; path = Carthage/Build/iOS/SwinjectStoryboard.framework; sourceTree = "<group>"; };
+		220A2032254804E400999ADC /* search_repositories_success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = search_repositories_success.json; sourceTree = "<group>"; };
 		22101F77250770BA0046FAF9 /* {{cookiecutter.app_name}}.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "{{cookiecutter.app_name}}.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22101F7A250770BA0046FAF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22101F7C250770BA0046FAF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,7 +99,6 @@
 		22BF9EFA251766C10033BFA9 /* SamplePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePresenter.swift; sourceTree = "<group>"; };
 		22BF9EFF2518D0480033BFA9 /* Sample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sample.storyboard; sourceTree = "<group>"; };
 		22DE192B2547FB9B00E9A6C8 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
-		22DE192D2547FDF400E9A6C8 /* search_repositories_success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = search_repositories_success.json; path = ../../../../Desktop/search_repositories_success.json; sourceTree = "<group>"; };
 		8B43113EBD5C626CC8ED4A3A /* Pods-{{cookiecutter.app_name}}Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-{{cookiecutter.app_name}}Tests.debug.xcconfig"; path = "Target Support Files/Pods-{{cookiecutter.app_name}}Tests/Pods-{{cookiecutter.app_name}}Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		ACBFF29B8F230525F81B8245 /* Pods-{{cookiecutter.app_name}}Tests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-{{cookiecutter.app_name}}Tests.adhoc.xcconfig"; path = "Target Support Files/Pods-{{cookiecutter.app_name}}Tests/Pods-{{cookiecutter.app_name}}Tests.adhoc.xcconfig"; sourceTree = "<group>"; };
 		C3E93B6BB56D7E6283A0B967 /* Pods-{{cookiecutter.app_name}}.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-{{cookiecutter.app_name}}.debug.xcconfig"; path = "Target Support Files/Pods-{{cookiecutter.app_name}}/Pods-{{cookiecutter.app_name}}.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				22027BF1250F68EC00F43EAB /* APIKit.framework in Frameworks */,
-				22027BF2250F68EC00F43EAB /* Result.framework in Frameworks */,
 				22027BF3250F68EC00F43EAB /* Swinject.framework in Frameworks */,
 				22027BF4250F68EC00F43EAB /* SwinjectStoryboard.framework in Frameworks */,
 				17F0E37E3C6DF8443F5EA10B /* Pods___cookiecutter_app_name__.framework in Frameworks */,
@@ -129,7 +126,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				22DE192C2547FB9B00E9A6C8 /* OHHTTPStubs.framework in Frameworks */,
-				22324BDB2547F539009FBD07 /* Result.framework in Frameworks */,
 				22324BDA2547F526009FBD07 /* APIKit.framework in Frameworks */,
 				199C8CB33C644908B1B04C4E /* Pods___cookiecutter_app_name__Tests.framework in Frameworks */,
 			);
@@ -178,8 +174,8 @@
 		22101F90250770BB0046FAF9 /* {{cookiecutter.app_name}}Tests */ = {
 			isa = PBXGroup;
 			children = (
+				220A2032254804E400999ADC /* search_repositories_success.json */,
 				22101F91250770BB0046FAF9 /* SampleRequestTests.swift */,
-				22DE192D2547FDF400E9A6C8 /* search_repositories_success.json */,
 				22101F93250770BB0046FAF9 /* Info.plist */,
 			);
 			path = "{{cookiecutter.app_name}}Tests";
@@ -486,7 +482,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22DE192E2547FDF500E9A6C8 /* search_repositories_success.json in Resources */,
+				220A2033254804E400999ADC /* search_repositories_success.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,7 +521,6 @@
 				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwinjectStoryboard.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 			);
 			name = Carthage;
 			outputFileListPaths = (
