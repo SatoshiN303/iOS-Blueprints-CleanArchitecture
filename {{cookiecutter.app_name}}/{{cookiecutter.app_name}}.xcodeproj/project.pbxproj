@@ -18,7 +18,9 @@
 		22101F7F250770BA0046FAF9 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22101F7E250770BA0046FAF9 /* SampleViewController.swift */; };
 		22101F84250770BB0046FAF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22101F83250770BB0046FAF9 /* Assets.xcassets */; };
 		22101F87250770BB0046FAF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22101F85250770BB0046FAF9 /* LaunchScreen.storyboard */; };
-		22101F92250770BB0046FAF9 /* {{cookiecutter.app_name}}Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22101F91250770BB0046FAF9 /* {{cookiecutter.app_name}}Tests.swift */; };
+		22101F92250770BB0046FAF9 /* SampleRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22101F91250770BB0046FAF9 /* SampleRequestTests.swift */; };
+		22324BDA2547F526009FBD07 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22027BED250F68EC00F43EAB /* APIKit.framework */; };
+		22324BDB2547F539009FBD07 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22027BEE250F68EC00F43EAB /* Result.framework */; };
 		2235C9E82534468900101010 /* KeyedDecodingContainerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235C9E72534468900101010 /* KeyedDecodingContainerExtension.swift */; };
 		2235C9EC2534535000101010 /* SearchRepositoriesParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235C9EB2534535000101010 /* SearchRepositoriesParameters.swift */; };
 		2235C9F02534579100101010 /* SearchRepositryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235C9EF2534579100101010 /* SearchRepositryRequest.swift */; };
@@ -42,6 +44,8 @@
 		22BF9EF9251766AA0033BFA9 /* SampleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BF9EF8251766AA0033BFA9 /* SampleProtocols.swift */; };
 		22BF9EFB251766C10033BFA9 /* SamplePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BF9EFA251766C10033BFA9 /* SamplePresenter.swift */; };
 		22BF9F002518D0490033BFA9 /* Sample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22BF9EFF2518D0480033BFA9 /* Sample.storyboard */; };
+		22DE192C2547FB9B00E9A6C8 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DE192B2547FB9B00E9A6C8 /* OHHTTPStubs.framework */; };
+		22DE192E2547FDF500E9A6C8 /* search_repositories_success.json in Resources */ = {isa = PBXBuildFile; fileRef = 22DE192D2547FDF400E9A6C8 /* search_repositories_success.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +71,7 @@
 		22101F86250770BB0046FAF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22101F88250770BB0046FAF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22101F8D250770BB0046FAF9 /* {{cookiecutter.app_name}}Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "{{cookiecutter.app_name}}Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		22101F91250770BB0046FAF9 /* {{cookiecutter.app_name}}Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "{{cookiecutter.app_name}}Tests.swift"; sourceTree = "<group>"; };
+		22101F91250770BB0046FAF9 /* SampleRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleRequestTests.swift; sourceTree = "<group>"; };
 		22101F93250770BB0046FAF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22240BAE2507897300BCF476 /* Config.Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.Debug.xcconfig; sourceTree = "<group>"; };
 		22240BAF2507898100BCF476 /* Config.Adhoc.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.Adhoc.xcconfig; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 		22BF9EF8251766AA0033BFA9 /* SampleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleProtocols.swift; sourceTree = "<group>"; };
 		22BF9EFA251766C10033BFA9 /* SamplePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePresenter.swift; sourceTree = "<group>"; };
 		22BF9EFF2518D0480033BFA9 /* Sample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sample.storyboard; sourceTree = "<group>"; };
+		22DE192B2547FB9B00E9A6C8 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
+		22DE192D2547FDF400E9A6C8 /* search_repositories_success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = search_repositories_success.json; path = ../../../../Desktop/search_repositories_success.json; sourceTree = "<group>"; };
 		8B43113EBD5C626CC8ED4A3A /* Pods-{{cookiecutter.app_name}}Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-{{cookiecutter.app_name}}Tests.debug.xcconfig"; path = "Target Support Files/Pods-{{cookiecutter.app_name}}Tests/Pods-{{cookiecutter.app_name}}Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		ACBFF29B8F230525F81B8245 /* Pods-{{cookiecutter.app_name}}Tests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-{{cookiecutter.app_name}}Tests.adhoc.xcconfig"; path = "Target Support Files/Pods-{{cookiecutter.app_name}}Tests/Pods-{{cookiecutter.app_name}}Tests.adhoc.xcconfig"; sourceTree = "<group>"; };
 		C3E93B6BB56D7E6283A0B967 /* Pods-{{cookiecutter.app_name}}.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-{{cookiecutter.app_name}}.debug.xcconfig"; path = "Target Support Files/Pods-{{cookiecutter.app_name}}/Pods-{{cookiecutter.app_name}}.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +128,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22DE192C2547FB9B00E9A6C8 /* OHHTTPStubs.framework in Frameworks */,
+				22324BDB2547F539009FBD07 /* Result.framework in Frameworks */,
+				22324BDA2547F526009FBD07 /* APIKit.framework in Frameworks */,
 				199C8CB33C644908B1B04C4E /* Pods___cookiecutter_app_name__Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,7 +178,8 @@
 		22101F90250770BB0046FAF9 /* {{cookiecutter.app_name}}Tests */ = {
 			isa = PBXGroup;
 			children = (
-				22101F91250770BB0046FAF9 /* {{cookiecutter.app_name}}Tests.swift */,
+				22101F91250770BB0046FAF9 /* SampleRequestTests.swift */,
+				22DE192D2547FDF400E9A6C8 /* search_repositories_success.json */,
 				22101F93250770BB0046FAF9 /* Info.plist */,
 			);
 			path = "{{cookiecutter.app_name}}Tests";
@@ -352,6 +362,7 @@
 		2B3A537FE2E367000124EBD8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22DE192B2547FB9B00E9A6C8 /* OHHTTPStubs.framework */,
 				22027BED250F68EC00F43EAB /* APIKit.framework */,
 				22027BEE250F68EC00F43EAB /* Result.framework */,
 				22027BEF250F68EC00F43EAB /* Swinject.framework */,
@@ -409,6 +420,7 @@
 				22101F89250770BB0046FAF9 /* Sources */,
 				22101F8A250770BB0046FAF9 /* Frameworks */,
 				22101F8B250770BB0046FAF9 /* Resources */,
+				22324BD92547F46E009FBD07 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -474,12 +486,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22DE192E2547FDF500E9A6C8 /* search_repositories_success.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		22324BD92547F46E009FBD07 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/OHHTTPStubs.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
 		22B79DD8250F51E900A81950 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -655,7 +689,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22101F92250770BB0046FAF9 /* {{cookiecutter.app_name}}Tests.swift in Sources */,
+				22101F92250770BB0046FAF9 /* SampleRequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -846,6 +880,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "{{cookiecutter.app_name}}Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -868,6 +906,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "{{cookiecutter.app_name}}Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -972,6 +1014,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "{{cookiecutter.app_name}}Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (

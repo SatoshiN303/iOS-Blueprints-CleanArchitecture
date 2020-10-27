@@ -8,5 +8,5 @@ github "Swinject/SwinjectStoryboard" == 2.2.0
 #===Test
 #github "Quick/Quick" ~> 1.2.0
 #github "Quick/Nimble" ~> 7.0.3
-#github "AliSoftware/OHHTTPStubs"
+github "AliSoftware/OHHTTPStubs"
 #github "uber/ios-snapshot-test-case" ~> 6.1.0

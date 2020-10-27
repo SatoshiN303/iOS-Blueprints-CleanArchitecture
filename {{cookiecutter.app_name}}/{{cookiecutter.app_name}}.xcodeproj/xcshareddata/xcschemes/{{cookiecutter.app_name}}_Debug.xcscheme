@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "22101F8C250770BB0046FAF9"
+               BuildableName = "{{cookiecutter.app_name}}Tests.xctest"
+               BlueprintName = "{{cookiecutter.app_name}}Tests"
+               ReferencedContainer = "container:{{cookiecutter.app_name}}.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
