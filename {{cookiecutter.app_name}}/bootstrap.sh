@@ -30,4 +30,4 @@ carthage bootstrap --platform ios --no-use-binaries
 
 echo "Enjoy Coding!🥂"
 
-open {{cookiecutter.app_name}}.xcworkspace
+xed .
