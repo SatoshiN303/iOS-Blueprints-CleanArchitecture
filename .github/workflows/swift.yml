@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Xcode Select
-      run: sudo xcode-select -s '/Applications/Xcode_12.0.app/Contents/Developer'
+      run: sudo xcode-select -s '/Applications/Xcode_12.1.app/Contents/Developer' #https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md#xcode
     - name: Show version
       run: |
         xcodebuild -version
