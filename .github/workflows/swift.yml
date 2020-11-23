@@ -24,6 +24,7 @@ jobs:
       run: |
         rm -rf ~/Library/Cache/carthage
         rm -rf ~/Library/Cache/org.carthage.CarthageKit
+        rm -rf ${TMPDIR}/TemporaryItems/*carthage*  
     - name: Install
       run: |
         brew install cookiecutter
