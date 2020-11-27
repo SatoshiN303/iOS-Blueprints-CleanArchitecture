@@ -1,0 +1,30 @@
+name: PullRequest
+
+on:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Xcode Select
+      run: sudo xcode-select -s '/Applications/Xcode_12.1.app/Contents/Developer' #https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md#xcode
+    - name: Show version
+      run: |
+        xcodebuild -version
+        pod --version
+        carthage version
+    - name: Carhtage Cache Clear
+      run: |
+        rm -rf ~/Library/Cache/carthage
+        rm -rf ~/Library/Cache/org.carthage.CarthageKit
+        rm -rf ${TMPDIR}/TemporaryItems/*carthage*  
+    - name: Setup and Build
+      run: |
+        cd ./\{\{cookiecutter.app_name\}\}/
+        ./bootstrap.sh
+        xcodebuild build -workspace "{{cookiecutter.app_name}}.xcworkspace" -scheme "{{cookiecutter.app_name}}_Debug" -sdk iphonesimulator

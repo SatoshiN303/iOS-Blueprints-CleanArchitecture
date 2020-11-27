@@ -1,9 +1,7 @@
-name: Swift
+name: PushMaster
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
     branches: [ master ]
 
 jobs:
@@ -25,7 +23,7 @@ jobs:
         rm -rf ~/Library/Cache/carthage
         rm -rf ~/Library/Cache/org.carthage.CarthageKit
         rm -rf ${TMPDIR}/TemporaryItems/*carthage*  
-    - name: Install
+    - name: Cookiecutter Install
       run: |
         brew install cookiecutter
         cookiecutter https://github.com/SatoshiN303/iOS-Blueprints-CleanArchitecture.git --no-input --config-file /Users/runner/work/iOS-Blueprints-CleanArchitecture/iOS-Blueprints-CleanArchitecture/default_config_for_actions.yml
