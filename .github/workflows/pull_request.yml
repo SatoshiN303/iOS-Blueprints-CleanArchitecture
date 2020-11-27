@@ -32,5 +32,5 @@ jobs:
          -workspace "{{cookiecutter.app_name}}.xcworkspace" 
          -scheme "{{cookiecutter.app_name}}_Debug" 
          -sdk iphonesimulator 
-         -destination 'platform=iOS Simulator, name=iPhone 11 Pro Max'
+         -destination 'platform=iOS Simulator,name=iPhone 11 Pro Max'
          clean build  
