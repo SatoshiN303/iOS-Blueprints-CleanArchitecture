@@ -18,11 +18,12 @@ jobs:
         xcodebuild -version
         pod --version
         carthage version
-    - name: Carhtage Cache Clear
+    - name: Carhtage Cache and DerivedData Clear
       run: |
         rm -rf ~/Library/Cache/carthage
         rm -rf ~/Library/Cache/org.carthage.CarthageKit
-        rm -rf ${TMPDIR}/TemporaryItems/*carthage*  
+        rm -rf ${TMPDIR}/TemporaryItems/*carthage*
+        rm -rf ~/Library/Developer/Xcode/DerivedData/*  
     - name: Setup and Build
       run: |
         cd ./\{\{cookiecutter.app_name\}\}/
