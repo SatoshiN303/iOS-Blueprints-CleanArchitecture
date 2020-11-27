@@ -2,7 +2,6 @@
 //  Config.Adhoc.xcconfig
 //  {{cookiecutter.app_name}}
 //
-//  Created by 佐藤 慎 on 2020/09/08.
 //  Copyright © 2020 {{cookiecutter.company_name}}. All rights reserved.
 //
 
@@ -16,3 +15,5 @@
 PRODUCT_BUNDLE_IDENTIFIER={{ cookiecutter.bundle_identifier | replace(' ', '') }}.adhoc
 
 OTHER_SWIFT_FLAGS = $(inherited) "-Onone" "-D" "ADHOC" "-D" "COCOAPODS" "-Xfrontend" "-warn-long-function-bodies=150"
+
+EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64

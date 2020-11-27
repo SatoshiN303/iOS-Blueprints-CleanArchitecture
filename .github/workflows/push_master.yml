@@ -1,9 +1,7 @@
-name: Swift
+name: PushMaster
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
     branches: [ master ]
 
 jobs:
@@ -14,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Xcode Select
-      run: sudo xcode-select -s '/Applications/Xcode_11.3.1.app/Contents/Developer'
+      run: sudo xcode-select -s '/Applications/Xcode_12.1.app/Contents/Developer' #https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md#xcode
     - name: Show version
       run: |
         xcodebuild -version
@@ -24,7 +22,8 @@ jobs:
       run: |
         rm -rf ~/Library/Cache/carthage
         rm -rf ~/Library/Cache/org.carthage.CarthageKit
-    - name: Install
+        rm -rf ${TMPDIR}/TemporaryItems/*carthage*  
+    - name: Cookiecutter Install
       run: |
         brew install cookiecutter
         cookiecutter https://github.com/SatoshiN303/iOS-Blueprints-CleanArchitecture.git --no-input --config-file /Users/runner/work/iOS-Blueprints-CleanArchitecture/iOS-Blueprints-CleanArchitecture/default_config_for_actions.yml
