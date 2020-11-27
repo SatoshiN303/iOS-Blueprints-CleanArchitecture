@@ -27,4 +27,4 @@ jobs:
       run: |
         cd ./\{\{cookiecutter.app_name\}\}/
         ./bootstrap.sh
-        xcodebuild build -workspace "{{cookiecutter.app_name}}.xcworkspace" -scheme "{{cookiecutter.app_name}}_Debug" -sdk iphonesimulator
+        xcodebuild build -workspace "{{cookiecutter.app_name}}.xcworkspace" -scheme "{{cookiecutter.app_name}}_Debug" -sdk iphonesimulator clean build
